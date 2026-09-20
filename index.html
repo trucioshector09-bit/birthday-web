@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Para ti · Feliz Cumpleaños</title>
+
+  <!-- Favicon emoji 🎂 -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================= -->
+  <!-- CAPAS DE FONDO ANIMADO                         -->
+  <!-- ============================================= -->
+  <div class="bg-layer bg-gradient" id="bgGradient"></div>
+  <div class="bg-layer bg-nebula" id="bgNebula"></div>
+  <div class="bg-layer bg-bokeh" id="bgBokeh"></div>
+  <div class="bg-layer bg-stars" id="bgStars"></div>
+  <div class="bg-layer bg-particles" id="bgParticles"></div>
+  <div class="bg-layer bg-sparkles" id="bgSparkles"></div>
+  <div class="bg-layer bg-hearts" id="bgHearts"></div>
+  <div class="bg-layer bg-shooting" id="bgShooting"></div>
+
+  <!-- ============================================= -->
+  <!-- ESCENA DE LA TORTA                             -->
+  <!-- ============================================= -->
+  <section class="cake-screen" id="cakeScreen">
+    <div class="cake-scene" id="cakeScene">
+
+      <div class="cake" id="cake">
+        <div class="plate"></div>
+        <div class="plate-shadow"></div>
+
+        <div class="layer layer-bottom">
+          <div class="layer-frosting"></div>
+          <div class="layer-dots"></div>
+        </div>
+
+        <div class="layer layer-middle">
+          <div class="layer-frosting"></div>
+          <div class="layer-dots"></div>
+        </div>
+
+        <div class="layer layer-top">
+          <div class="layer-frosting"></div>
+          <div class="layer-dots"></div>
+          <div class="toppings">
+            <span class="topping strawberry"></span>
+            <span class="topping raspberry"></span>
+            <span class="topping leaf"></span>
+            <span class="topping strawberry small"></span>
+            <span class="topping raspberry small"></span>
+          </div>
+        </div>
+
+        <!-- Texto distribuido en las 3 capas -->
+        <div class="cake-text text-top">Feliz</div>
+        <div class="cake-text text-middle">Cumpleaños</div>
+        <div class="cake-text text-bottom">Mi Princesita Hermosa</div>
+
+        <div class="candle">
+          <div class="candle-body">
+            <div class="candle-stripe"></div>
+            <div class="candle-stripe"></div>
+            <div class="candle-stripe"></div>
+          </div>
+          <div class="candle-wick" id="candleWick"></div>
+          <div class="candle-flame" id="flame"></div>
+          <div class="candle-glow" id="flameGlow"></div>
+        </div>
+
+        <div class="spark" id="spark">
+          <span class="spark-core"></span>
+          <span class="spark-trail" id="sparkTrail"></span>
+        </div>
+
+        <div class="smoke" id="smoke">
+          <span></span><span></span><span></span>
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <div class="intro-text" id="introText">
+        <p class="intro-line1" id="introLine1">Antes de comenzar…</p>
+        <p class="intro-line2" id="introLine2">Hay algo que quiero recordarte.</p>
+        <button class="btn-start" id="startBtn">COMENZAR ❤️</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- HISTORIA PRINCIPAL                             -->
+  <!-- ============================================= -->
+  <main class="main-experience" id="mainExperience">
+
+    <!-- INTRODUCCIÓN DE LA HISTORIA -->
+    <section class="section story-section">
+      <div class="section-content">
+        <p class="story-line" data-story="1">Y ahora sí…</p>
+        <p class="story-line" data-story="2">Quiero comenzar a contarte algo.</p>
+        <p class="story-line" data-story="3">Hace un tiempo te dije algo…</p>
+        <p class="story-line" data-story="4">Algo que quizá nunca imaginé cuánto iba a significar para mí.</p>
+        <p class="story-line highlight" data-story="5">"Mientras yo exista</p>
+        <p class="story-line highlight" data-story="6">…tus cumpleaños nunca más seran un dia normal."</p>
+      </div>
+    </section>
+
+    <!-- FOTO 01 -->
+    <section class="section memory-section">
+      <div class="memory-content">
+        <div class="memory-media" data-anim="fade-scale">
+          <img src="assets/photos/foto01.jpg" alt="Recuerdo">
+        </div>
+        <p class="memory-text">Y con el tiempo entendí que no se trataba de hacer algo perfecto.</p>
+      </div>
+    </section>
+
+    <!-- FOTO 02 -->
+    <section class="section memory-section">
+      <div class="memory-content">
+        <div class="memory-media" data-anim="slide-left">
+          <img src="assets/photos/foto02.jpg" alt="Recuerdo">
+        </div>
+        <p class="memory-text">Se trataba de ir guardando pequeños momentos…</p>
+        <p class="memory-text small">De esos que quizá parecen simples cuando suceden.</p>
+      </div>
+    </section>
+
+    <!-- FOTO 03 -->
+    <section class="section memory-section">
+      <div class="memory-content">
+        <div class="memory-media" data-anim="rise-rotate">
+          <img src="assets/photos/foto03.jpg" alt="Recuerdo">
+        </div>
+        <p class="memory-text">Pero que después vuelves a mirar…</p>
+        <p class="memory-text small">…y te das cuenta de cuánto significan.</p>
+      </div>
+    </section>
+
+    <!-- VIDEO 01 -->
+    <section class="section memory-section video-section">
+      <div class="memory-content">
+        <div class="memory-media" data-anim="video-cinematic">
+          <video src="assets/photos/video01.mp4" muted playsinline loop preload="metadata"></video>
+        </div>
+        <p class="memory-text">Hay momentos que simplemente se quedan.</p>
+      </div>
+    </section>
+
+    <!-- FOTO 04 -->
+    <section class="section memory-section">
+      <div class="memory-content">
+        <div class="memory-media" data-anim="parallax-rotate">
+          <img src="assets/photos/foto04.jpg" alt="Recuerdo">
+        </div>
+        <p class="memory-text">Y sin darnos cuenta, fuimos llenando el tiempo de recuerdos.</p>
+        <p class="memory-text small">Uno detrás de otro.</p>
+      </div>
+    </section>
+
+    <!-- VIDEO 02 -->
+    <section class="section memory-section video-section">
+      <div class="memory-content">
+        <div class="memory-media" data-anim="video-rise">
+          <video src="assets/photos/video02.mp4" muted playsinline loop preload="metadata"></video>
+        </div>
+        <p class="memory-text">Algunos recuerdos no necesitan explicación.</p>
+        <p class="memory-text small">Solo basta volver a ellos.</p>
+      </div>
+    </section>
+
+    <!-- FOTO 05 -->
+    <section class="section memory-section">
+      <div class="memory-content">
+        <div class="memory-media" data-anim="cinematic-zoom">
+          <img src="assets/photos/foto05.jpg" alt="Recuerdo">
+        </div>
+        <p class="memory-text">Y si algo aprendí de todo esto…</p>
+        <p class="memory-text small">…es que los momentos importantes no siempre avisan que lo serán.</p>
+      </div>
+    </section>
+
+    <!-- PAUSA -->
+    <section class="section pause-section">
+      <div class="section-content">
+        <p class="pause-line" data-pause="1">Porque al final…</p>
+        <p class="pause-line" data-pause="2">No son solamente fotografías.</p>
+        <p class="pause-line highlight" data-pause="3">Son partes de una historia que seguimos construyendo.</p>
+      </div>
+    </section>
+
+    <!-- FUTURO -->
+    <section class="section future-section">
+      <div class="section-content">
+        <p class="future-line" data-future="1">Y lo más bonito es que todavía no tenemos todos los recuerdos.</p>
+        <p class="future-line" data-future="2">Todavía quedan muchos días que no conocemos.</p>
+        <p class="future-line" data-future="3">Muchas fotografías que todavía no existen.</p>
+        <p class="future-line highlight" data-future="4">Muchos momentos que todavía nos esperan.</p>
+      </div>
+    </section>
+
+    <!-- FOTO 06 -->
+    <section class="section memory-section special-memory">
+      <div class="memory-content">
+        <div class="memory-media" data-anim="final-zoom">
+          <img src="assets/photos/foto06.jpg" alt="Recuerdo">
+        </div>
+        <p class="memory-text">Y todavía nos quedan muchos recuerdos por crear.</p>
+      </div>
+    </section>
+
+    <!-- CARTA -->
+    <section class="section letter-section" id="letterSection">
+      <div class="letter-content">
+        <p class="letter-intro">Pero hay algo más que quiero decirte…</p>
+
+        
+
+        <!-- ==============================
+             MENSAJE PERSONAL — EDITADO
+             ============================== -->
+        <div class="personal-message" id="personalMessage">
+
+          <p class="personal-message-text">Aprovecho este momento para decirte algo que quizá no siempre sé cómo expresar cuando estamos frente a frente.</p>
+
+          <p class="personal-message-text">A veces hay cosas que siento y que, por más que quiera, no encuentro las palabras exactas para decirlas.</p>
+
+          <p class="personal-message-text">Pero quizá esa es también una de las cosas bonitas de hacer todo esto: porque así puedo utilizar algo que forma parte de mi mundo, como programar y crear, y así encuentro una manera diferente de expresarte todo aquello que muchas veces se queda en mi cabeza y que no sé cómo decirte en persona.</p>
+
+          <p class="personal-message-text">Cada detalle de esta página es una pequeña forma de decirte cosas que quizá hablando no siempre consigo expresar.</p>
+
+          <p class="personal-message-text">Bueno, quiero decirte que hemos pasado por muchas cosas. Algunas fueron fáciles y bonitas, y otras nos hicieron pasar momentos que seguramente ninguno de los dos quisiera repetir.</p>
+
+          <p class="personal-message-text">Hemos tenido diferencias, hemos cometido errores y también hemos tenido que aprender a entendernos de maneras que antes no sabíamos.</p>
+
+          <p class="personal-message-text">Pero si hay algo que valoro de nosotros, es que a pesar de todo eso seguimos aquí.</p>
+
+          <p class="personal-message-text">Con el tiempo aprendí que querer a alguien no significa que todo siempre vaya a ser perfecto. También significa aprender a escuchar, reconocer cuando uno se equivoca, tener paciencia y decidir seguir construyendo incluso después de los momentos difíciles.</p>
+
+          <p class="personal-message-text">Y tú has dejado muchísimas cosas bonitas en mi vida. Momentos que quizás en su momento parecían pequeños, pero que hoy significan muchísimo para mí.</p>
+
+          <p class="personal-message-text">A veces pienso en todo lo que hemos pasado y me sorprende cuánto hemos cambiado desde que comenzamos. Hemos crecido, hemos aprendido y hemos descubierto cosas de nosotros que probablemente nunca habríamos conocido de otra manera.</p>
+
+          <p class="personal-message-text">No sé exactamente qué nos espera más adelante, pero sí sé que quiero seguir conociendo esa parte de la vida contigo. Seguir riéndonos por cosas que solamente nosotros entendemos, seguir teniendo días increíbles y también aprender a superar juntos los días que no lo sean tanto.</p>
+
+          <p class="personal-message-text">Y si algún día volvemos a mirar hacia atrás, quiero que podamos sentir orgullo de todo lo que fuimos capaces de superar y de todas las cosas bonitas que construimos en el camino.</p>
+
+          <p class="personal-message-text">Gracias por quedarte, por compartir conmigo una parte de tu vida y por permitirme formar parte de la tuya.</p>
+
+          <p class="personal-message-text">Hoy solamente quiero verte feliz, que disfrutes este día y recordarte algo muy sencillo:</p>
+
+          <p class="personal-message-text final">Te amo, y me alegra muchísimo que seas tú la persona con la que he podido vivir todo esto.</p>
+
+          <p class="personal-message-text cierre">Feliz cumpleaños, mi amor #25 ❤️</p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PAUSA DESPUÉS DE LA CARTA -->
+    <section class="section final-pause-section">
+      <div class="section-content">
+        <p class="final-pause-line" data-fp="1">Y todavía hay algo que quiero que recuerdes.</p>
+      </div>
+    </section>
+
+    <!-- REGRESO A LA PROMESA -->
+    <section class="section promise-section">
+      <div class="section-content">
+        <p class="promise-line small" data-promise="1">¿Recuerdas lo que te dije?</p>
+        <p class="promise-line highlight" data-promise="2">Mientras yo exista</p>
+        <p class="promise-line highlight big" data-promise="3">…tus cumpleaños nunca más seran un dia normal.</p>
+      </div>
+    </section>
+
+    <!-- EL SIGNIFICADO -->
+    <section class="section meaning-section">
+      <div class="section-content">
+        <p class="meaning-line" data-meaning="1">Quizá aquella vez todavía no sabía todo lo que significaba.</p>
+        <p class="meaning-line highlight" data-meaning="2">Ahora sí.</p>
+        <p class="meaning-line" data-meaning="3">Significa querer estar presente en tus días importantes.</p>
+        <p class="meaning-line" data-meaning="4">Significa querer guardar contigo los momentos que algún día vamos a recordar.</p>
+        <p class="meaning-line" data-meaning="5">Y significa saber que todavía nos quedan muchos recuerdos por crear.</p>
+      </div>
+    </section>
+
+    <!-- ESCENA FINAL -->
+    <section class="section final-section" id="finalSection">
+      <div class="floating-memories" id="floatingMemories"></div>
+
+      <div class="final-content">
+        <p class="final-line big" data-final="1">Feliz cumpleaños, mi amor. ❤️</p>
+        <p class="final-line" data-final="2">Espero que cuando algún día volvamos a mirar todo esto…</p>
+        <p class="final-line" data-final="3">…podamos sonreír pensando en todo lo que todavía nos quedaba por vivir.</p>
+        <p class="final-line signature" data-final="4">Gracias por estar en mi vida. ❤️</p>
+      </div>
+
+      <div class="final-particles" id="finalParticles"></div>
+      <div class="last-heart" id="lastHeart">❤</div>
+      <div class="fade-to-dark" id="fadeToDark"></div>
+    </section>
+
+  </main>
+
+  <!-- Botón flotante de música -->
+  <button class="music-toggle" id="musicToggle" aria-label="Música">♫</button>
+
+  <!-- ============================================= -->
+  <!-- 🎵 PLAYLIST: 2 canciones en orden               -->
+  <!-- ============================================= -->
+  <div id="playlist" style="display: none;">
+    <span data-src="assets/music/musica1.mp3"></span>
+    <span data-src="assets/music/musica2.mp3"></span>
+  </div>
+
+  <audio id="bgMusic" preload="none"></audio>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
